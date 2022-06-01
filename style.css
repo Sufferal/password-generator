@@ -36,10 +36,15 @@ h1, h2, h3, h4, h5, h6, p {
 button, input {
   font-family: 'Montserrat', sans-serif;
   font-size: 1.6rem;
+  margin: 0;
 }
 
 input[type=checkbox] {
   transform: scale(1.5);
+}
+
+.example {
+  color: #4e0c66;
 }
 
 .container {
@@ -57,14 +62,14 @@ input[type=checkbox] {
 }
 
 .container .title {
+  font-size: 4rem;
   color: #12c2e9;
   margin-bottom: 2rem;
 }
 
 .elem .desc {
-  font-size: 2.5rem;
+  font-size: 2.3rem;
   margin-right: 1rem;
-  text-transform: capitalize;
 }
 
 /* Customize the label (the container) */
@@ -167,6 +172,7 @@ input[type=checkbox] {
 }
 
 .elem .desc.desc-pass {
+  margin-bottom: 0.5rem;
   color: #12c2e9; 
 }
 
@@ -182,7 +188,6 @@ input[type=checkbox] {
 }
 
 #copy {
-  margin: 3rem 0;
   padding: 1.5rem;
 
   font-weight: bold;
