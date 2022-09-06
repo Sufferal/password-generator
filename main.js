@@ -6,6 +6,12 @@ const copyElem     = document.getElementById('copy');
 generateElem.addEventListener('click', generatePassword);
 copyElem.addEventListener("click", copyPassword);
 
+// Generate and copy to clipboard the password when page loads
+window.onload = () => {
+  generatePassword();
+  copyPassword();
+}
+
 function generatePassword() {
   const length = lengthElem.value;
   const symbols = ["!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "-", "_", "=", "+", "\\", "|", 
