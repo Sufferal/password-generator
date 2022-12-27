@@ -1,9 +1,11 @@
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
-html, body 
-{
+html,
+body {
   font-size: 10px;
   overflow: hidden;
 }
@@ -20,51 +22,73 @@ body {
   justify-content: center;
   align-items: center;
 
-  background: #12c2e9;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #f64f59, #c471ed, #12c2e9);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #12c2e9; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #f64f59,
+    #c471ed,
+    #12c2e9
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #f64f59,
+    #c471ed,
+    #12c2e9
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 1.6rem;
   color: #fff;
 }
 
-h1, h2, h3, h4, h5, h6, p {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
   margin: 0;
 }
 
-button, input {
-  font-family: 'Montserrat', sans-serif;
+button,
+input {
+  font-family: "Montserrat", sans-serif;
   font-size: 1.6rem;
+  margin: 0;
 }
 
-input[type=checkbox] {
+input[type="checkbox"] {
   transform: scale(1.5);
+}
+
+.example {
+  color: #4e0c66;
 }
 
 .container {
   width: 80%;
-  height: 80%;
 
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 
+  margin: 5rem 0;
   padding: 3rem 5rem;
 
   background: rgba(0, 0, 0, 0.3);
 }
 
 .container .title {
+  font-size: 4rem;
   color: #12c2e9;
   margin-bottom: 2rem;
 }
 
 .elem .desc {
-  font-size: 2.5rem;
+  font-size: 2.3rem;
   margin-right: 1rem;
-  text-transform: capitalize;
 }
 
 /* Customize the label (the container) */
@@ -116,7 +140,7 @@ input[type=checkbox] {
 
 /* When the checkbox is checked, add a blue background */
 .elem input[type="checkbox"]:checked ~ .checkmark {
-  background-color: #2196F3;
+  background-color: #2196f3;
 }
 
 /* Create the checkmark/indicator (hidden when not checked) */
@@ -156,7 +180,7 @@ input[type=checkbox] {
   border: none;
 
   border-radius: 2px;
-  transition: all .2s;
+  transition: all 0.2s;
 }
 
 #generate:hover {
@@ -167,7 +191,8 @@ input[type=checkbox] {
 }
 
 .elem .desc.desc-pass {
-  color: #12c2e9; 
+  margin-bottom: 0.5rem;
+  color: #12c2e9;
 }
 
 #password {
@@ -182,7 +207,6 @@ input[type=checkbox] {
 }
 
 #copy {
-  margin: 3rem 0;
   padding: 1.5rem;
 
   font-weight: bold;
@@ -193,7 +217,7 @@ input[type=checkbox] {
   border: none;
 
   border-radius: 2px;
-  transition: all .2s;
+  transition: all 0.2s;
 }
 
 #copy:hover {
